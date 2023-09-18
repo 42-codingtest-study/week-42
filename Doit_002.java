@@ -11,6 +11,11 @@ public class BOJ1546 {
 		int sum = 0;
 
 		int[] inputScores = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+
+		/**
+		 * (a/M + b/M + c/M) * 100 == (a + b + c) / M * 100
+		 * 새로운 값을 구할 필요가 없다.
+		 */
 		for (int score : inputScores) {
 			if (M < score) M = score;
 			sum += score;

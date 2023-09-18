@@ -7,6 +7,9 @@ public class BOJ11720 {
 	public static void main(String[] args) throws IOException {
 		int N = Integer.parseInt(br.readLine());
 
+		/**
+		 * 문자열을 String이 아닌 char[]로 받아서 계산
+		 */
 		char[] inputNum = br.readLine().toCharArray();
 		int sum = 0;
 
