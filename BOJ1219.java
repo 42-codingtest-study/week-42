@@ -37,6 +37,8 @@ public class BOJ1219 {
 			cities.get(start).add(new City(target, money));
 		}
 
+//		System.out.println("\ncities = " + cities);
+
 		earnMoney = new int[N];
 		int[] inputMoney = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 		if (N >= 0) System.arraycopy(inputMoney, 0, earnMoney, 0, N);
@@ -45,7 +47,8 @@ public class BOJ1219 {
 		if (!bfs(S, T)) bw.write("gg\n");
 		else {
 			update = false;
-			if (bellmanFordOrigin(S) && bellmanFordCycle(S, T)) bw.write("Gee\n");
+			bellmanFordOrigin(S);
+			if (bellmanFordCycle(S, T)) bw.write("Gee\n");
 			else bw.write(totalEarn[T] + "\n");
 		}
 		bw.flush();
