@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
 /**
  * 덱에 들어간 노드 중 구간을 벗어난 노드를 찾기 위해 값과 인덱스를 함께 저장한다.
  */
-public class BOJ_010 {
+public class Doit_010 {
     static class Node {
         public int index;
         public int value;
