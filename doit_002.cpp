@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
   //시간복잡도 2초 2억,  N 1000 이하니까 O(N)
-  // 자료구조는 그냥 배열 사용ç
+  // 자료구조는 그냥 배열 사용
   int n,m;
   float arr[1002];
 

@@ -16,7 +16,7 @@ int main()
   scanf("%d", &n);
   for (int i = 0; i < n; i++)
     scanf("%lld", &arr[i]);
-  sort(arr, arr+n);
+  sort(arr, arr+n); //투포인터 사용을 위한 정렬
 
   int cnt = 0;
 
@@ -25,11 +25,11 @@ int main()
     int target = arr[i];
 
     int pointer1 = 0;
-    int pointer2 = n-1;
+    int pointer2 = n-1; //투포인터
     
     while(pointer1 < pointer2)
     {
-      if (pointer1 != i && pointer2 != i)
+      if (pointer1 != i && pointer2 != i) // i 번째 수는 제외한다.
       {
         if (arr[pointer1] + arr[pointer2] == target)
         {

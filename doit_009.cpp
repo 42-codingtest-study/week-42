@@ -66,11 +66,11 @@ int main()
       checker[2]++;
     else if (str[i] == 'T')
       checker[3]++;
-  }   //초기 acgt 개수 배열 생성
+  }   //초기 acgt 개수를 담은 배열 생성
 
   int cnt = 0;
 
-  while(end != s)
+  while(end != s) //슬라이딩 윈도우 종료조건 : end 가 배열 끝에 다다름
   {
     if (checkValid() == true)
       cnt++;

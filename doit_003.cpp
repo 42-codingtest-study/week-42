@@ -13,12 +13,11 @@ int main()
   int sum[100002];
 
   scanf("%d %d", &n, &m);  
-  // cin>>n>>m;
+  
   sum[0]  = 0;
   for (int i = 1; i <= n; i++)
   {
     scanf("%d", &arr[i]);
-    // cin>>arr[i];
     if (i == 1)
       sum[i] = arr[i];
     else
@@ -29,9 +28,7 @@ int main()
   {
     int from, to;
     scanf("%d %d", &from, &to);
-    // cin>>from >> to;
     printf("%d\n", sum[to] - sum[from-1]);
-    // cout<<sum[to] - sum[from-1] << "\n";
   }
   return 0;
 }
